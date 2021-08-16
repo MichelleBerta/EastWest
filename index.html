@@ -30,9 +30,9 @@
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo left"><img class="logo" src="assets/East-West_Logo.png"></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li class="droptdown-trigger"><a href="about.html">About Us</a></li>
-                    <li class="droptdown-trigger"><a href="join.html">Join Us</a></li>
-                    <li class="droptdown-trigger"><a href="team.html">Our Team</a></li>
+                    <li class="dropdown-trigger "><a href="about.html">About Us</a></li>
+                    <li class="dropdown-trigger"><a href="join.html">Join Us</a></li>
+                    <li class="dropdown-trigger"><a href="team.html">Our Team</a></li>
                     <li><a href="sass.html"><i class="material-icons">search</i></a></li>
                     <li><a class="waves-effect waves-light btn">Give</a></li>
                 </ul>
@@ -83,29 +83,32 @@
         <div class="hero-text">
             <h1>3.16 BILLION STILL UNREACHED</h1>
             <h4>Give to support a missionary, initiative, or region.</h4>
-            <div class="input-field col l4 s12">
-                <i class="material-icons prefix">monetization_on</i>
-                <input id="give" type="text" class="validate">
-                <label for="give"></label>
-            </div>
-            <div class="col l4 s12">
-                <form action="#">
-                    <p>
-                        <label>
-                            <input name="group1" type="radio" checked />
-                            <span>ONE TIME</span>
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                            <input name="group1" type="radio" />
-                            <span>MONTHLY</span>
-                        </label>
-                    </p>
-                </form>
-            </div>
-            <div class="col l4 s12">
-                <a class="waves-effect waves-light btn">Give Now!</a>
+            <div class="row">
+                <div class="input-field col l6 s12">
+                    <i class="material-icons prefix">monetization_on</i>
+                    <input id="give" type="text" class="validate">
+                    <label for="give"></label>
+                </div>
+
+                <div class="col l4 s12">
+                    <form action="#">
+                        <p>
+                            <label>
+                                <input name="group1" type="radio" checked />
+                                <span>ONE TIME</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input name="group1" type="radio" />
+                                <span>MONTHLY</span>
+                            </label>
+                        </p>
+                    </form>
+                </div>
+                <div class="col l2 s12">
+                    <a class="waves-effect waves-light btn">Give Now!</a>
+                </div>
             </div>
         </div>
     </div>
@@ -113,10 +116,16 @@
     <div class="container-updates">
         <div class="row">
             <form class="col l6 s12">
-                <div id="updates">
+                <div class="updates">
+
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                     <h1>Sign up for field updates</h1>
-                    <h4>Stay connected and be inspired by monthly news on how the gospel is affecting the world. Learn More</h4>
-                    <div class="row">
+                    <h4 class="connect">Stay connected and be inspired by monthly news on how the gospel is affecting the world. Learn More</h4>
+                    <div class="row form">
                         <div class="input-field col l6 s6">
                             <input id="first_name" type="text" class="validate">
                             <label for="first_name">First Name</label>
@@ -128,7 +137,7 @@
                         <div class="row">
                             <div class="input-field col l6 s12">
                                 <input id="email" type="email" class="validate">
-                                <label for="email">Email</label>
+                                <label class="email" for="email">Email</label>
                             </div>
                         </div>
                         <a class="waves-effect waves-light btn">Submit</a>
@@ -136,12 +145,15 @@
                 </div>
             </form>
 
-            <div class="col l6 s12 scripture">
-                <!-- <img src="assets/reading-scripture.jpg"> -->
-                <h1>Blessed Suffering</h1>
-                <h4>When we go public with Jesus, there will be people who will resist us. But 1 Peter 3:14 tells us that our Lord does not want us to "fear their threats" or to be "frightened." In
-                    other words, don't be intimdated out of telling others....</h4>
-                <a class="waves-effect waves-light btn">Read More</a>
+            <div class="container-scripture">
+                <div class="col l12 s12">
+                    <img src="assets/reading-scripture.jpg">
+                    <h2>Blessed Suffering</h2>
+                    <h4>When we go public with Jesus, there will be people who will resist us. But 1 Peter 3:14 tells us that our Lord does not want us to "fear their threats" or to be "frightened."
+                        In
+                        other words, don't be intimdated out of telling others....</h4>
+                    <a class="waves-effect waves-light btn center-align">Read More</a>
+                </div>
             </div>
         </div>
     </div>
@@ -154,7 +166,7 @@
         <div class="container">
             <div class="row">
                 <div class="col l3 s12">
-                    <p> class="black-text">QUICK LINKS</h5>
+                    <h5 class="black-text">QUICK LINKS</h5>
                     <ul>
                         <li><a class="grey-text text-1" href="#!">2021 Vision</a></li>
                         <li><a class="grey-text text-1" href="#!">Blog</a></li>

@@ -8,8 +8,8 @@ html {
   padding: 0%;
 }
 
-.active {
-  background-color: var(--orange);
+a {
+  color: black !important;
 }
 
 .logo {
@@ -86,30 +86,108 @@ p {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/baptism.jpg");
 }
 
-.give .btn {
+.give .btn,
+.footer-copyright .btn {
   background-color: green;
+  vertical-align: middle;
 }
 
-#updates {
-  color: var(--orange);
-  background-image: url(assets/mountain-valley.jpg);
-  background-repeat: no-repeat;
+.updates {
+  display: block;
+  position: relative;
+}
+
+.updates::after {
+  content: "";
+  background: url(assets/mountain-valley.jpg);
   background-size: cover;
-  opacity: 0.4;
+  max-height:max-content;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 
-.scripture {
-  background-image: url(assets/reading-scripture.jpg);
+.updates h1 {
+  color: var(--orange);
+  margin: 145px 65px;
+  text-align: center;
+}
+
+h4.connect {
+margin: 0px 68px !important;
+}
+
+ /* label color */
+ .input-field label {
+  color: #000;
+  margin-left: 20px;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #000;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+#first_name.validate,
+#last_name.validate,
+#email.validate {
+background-color: mistyrose;
+opacity: .5;
+}
+
+#email.validate {
+  margin-left: 10px;
+}
+
+
+.row .form {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.container-updates .btn {
+margin: 10px auto;
+display:block
+}
+
+.container-scripture {
+  display: flex;
+  min-height: 30%;
+  justify-content: flex-start;
   background-color: teal;
   color: white;
 }
 
-.form-image {
-  opacity: 0.4;
-  z-index: -1;
-  width: 100%;
-  padding: 0;
+.container-scripture img {
+  max-width: 100%;
+  margin: 0;
 }
+
+.container-scripture h2 {
+  text-align: center;
+  color: white;
+}
+
+.container-scripture h4 {
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 2rem;
+}
+
+.container-scripture .btn {
+  margin: 10px auto;
+  display:block
+}
+
+
 
 /* footer */
 
